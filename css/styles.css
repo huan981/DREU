@@ -47,6 +47,7 @@ body {
 .blog-date{
   font-family: 'Montserrat';
   font-style: italic;
+  color:#FF9189;
 }
 .blog-post{
   padding: 7% 9%;
