@@ -1,0 +1,129 @@
+body {
+  font-family: Arial;
+
+
+
+}
+
+.logo{
+  margin: auto;
+  width: 70%;
+  padding: 30px 50px 0 30px;
+}
+.title{
+  font-family: 'Overpass';
+  font-weight: 700;
+}
+
+.container{
+  padding-bottom: 50px;
+}
+.mybody{
+  background-image: linear-gradient(to bottom, #acb6e5, #74ebd5 );
+}
+
+.paragraph-break{
+  line-height: 5;
+}
+.header{
+  text-align: center;
+  padding: 3% 5% 6%;
+  color: white;
+}
+.description{
+  padding-bottom: 3%
+}
+
+.text-section{
+  background-color: white;
+  opacity: 0.7;
+
+}
+
+.blog-heading{
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+.blog-date{
+  font-family: 'Montserrat';
+  font-style: italic;
+}
+.blog-post{
+  padding: 7% 9%;
+  background-color: white;
+  font-family: 'Georgia';
+  font-size: 0.9rem;
+  line-height:1.5;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.blog-sidebar{
+  text-align: center;
+}
+
+.about-section{
+  background-color: white;
+  opacity: 0.8;
+  padding:30px;
+  padding-bottom:40px;
+  font-family: 'Montserrat';
+
+}
+
+.about-heading{
+  font-weight: 700;
+}
+.about-body{
+  font-size: 0.9rem;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.profilepic{
+border-radius: 100%;
+  opacity: 1;
+  width: 60%;
+
+  padding: 10px;
+}
+
+.owl-image{
+  width: 100px;
+  float: left;
+  margin-top: 10px;
+}
+
+.link{
+  color:#FF9189;
+}
+
+.link:hover{
+color: #FFC9C9;
+text-decoration: none;
+}
+
+.blog-pagination{
+  padding: 20px 0;
+}
+
+.older:hover{
+  color: white;
+  opacity: 0.6;
+}
+
+.footer{
+  background-color: white;
+  text-align: center;
+  color: gray;
+  padding: 50px;
+}
+
+.footer-icon{
+  padding: 20px 10px;
+}
+
+.copyright{
+  margin-bottom: 0;
+  font-family: 'Montserrat';
+  font-size: 0.7rem;
+}
