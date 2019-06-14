@@ -1,14 +1,45 @@
 body {
-  font-family: Arial;
+  font-family: 'Montserrat';
+}
 
+h3{
+  color:#FF9189;
+  padding-bottom: 10px
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}​
 
+p{
+  line-height: 2;
+  font-family: 'Source Sans Pro';
+}
+/*Navigation Bar*/
+.navbar{
+  padding-bottom: 3rem;
 
+}
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  padding-top:0;
 }
 
 .logo{
   margin: auto;
-  width: 70%;
-  padding: 30px 50px 0 30px;
+  width: 50%;
+  padding: 10px 50px 0 30px;
 }
 .title{
   font-family: 'Overpass';
@@ -27,7 +58,7 @@ body {
 }
 .header{
   text-align: center;
-  padding: 3% 5% 6%;
+  padding: 3% 8.5% 4%;
   color: white;
 }
 .description{
@@ -46,17 +77,21 @@ body {
 }
 .blog-date{
   font-family: 'Montserrat';
-  font-style: italic;
   color:#FF9189;
+  font-size:1rem;
 }
 .blog-post{
   padding: 7% 9%;
   background-color: white;
-  font-family: 'Georgia';
+  font-family: 'Source Sans Pro';
   font-size: 0.9rem;
-  line-height:1.5;
+  line-height:1.7;
   opacity: 0.8;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.blog-post {
+  font-family: 'Source Sans Pro';
 }
 
 .blog-sidebar{
@@ -95,11 +130,11 @@ border-radius: 100%;
 }
 
 .link{
-  color:#FF9189;
+  color:#5EB2B1;
 }
 
 .link:hover{
-color: #FFC9C9;
+color: #92E0EF;
 text-decoration: none;
 }
 
@@ -128,3 +163,23 @@ text-decoration: none;
   font-family: 'Montserrat';
   font-size: 0.7rem;
 }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+.people{
+  font-size: 1rem;
+    color:#FF9189;
+    padding-top: 10px;
+
+
+}
+
+.people-col{
+  margin: 20px;
+}
+
+
+
+
