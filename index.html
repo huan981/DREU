@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
   <script src="https://kit.fontawesome.com/de79172ee1.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans: 700|Overpass:400,700|Montserrat:200,400,700,900|Ubuntu&display=swap" rel="stylesheet">
-  <!-- Boot -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans: 700|Overpass:400,700|Montserrat:200,400,700,900|Lora|PT+Serif|Source+Sans+Pro|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -19,19 +19,76 @@
 
 <body class="mybody">
   <div class="header">
-    <img class="logo" src="images/dreulogo.png" alt="dreu-logo">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+      <img class="logo" src="images/dreulogo.png" alt="dreu-logo">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">blog <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">people</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
   </div>
 
   <div class="container">
 
     <div class="row">
-      <div class="col-md-8 col-sm-12 blog-main rounded">
+      <div class="col-md-8 blog-main rounded">
 
         <div class="blog-post rounded">
           <h2 class="blog-post-title blog-heading">week 2</h2>
           <p class="blog-post-meta blog-date">06.10.19 - 06.14.19</p>
           <hr>
-          <p>coming soon!
+          <p>Happy Friday!
+            Things have started settling down this week, as the final interns have joined and begun the on boarding process. Professor Kumar and I have decided on two weekly meetings: one on Monday afternoon, and the second on Thursday evenings. The
+            Monday meetings are dedicated to discussing the actual fashion research project, reviewing the work we did over the week, and setting new goals. The Thursday meetings are lab-wide. The first half is dedicated to updates, where each group
+            talks a bit about what they’ve been working on. During the second half, Yuan, a graduate student, holds a mini tutorial for us in which he teaches us a new skill!
+            <br />
+            <br />
+            This Monday’s meeting was particularly productive. We reviewed the mock survey Yichen and I had designed. In the mock survey, we planned to ask about things such as the user’s clothing preferences (brand preferences, price range, colors),
+            and asking them to describe a fashion problem they’d like to solve. At the end, we’d give them the option to provide more personal information, such as hair color and skin tone, which would allow us to produce a more personalized result.
+            This question had two purposes: to try and create more meaningful product recommendations (such as skin tone-color combos), but to also gauge if users were willing to give up that information in the first place.
+            After discussing our survey, Professor Kumar and I honed in on one aspect. Having Yichen and I generate the explanations by hand—acting as the temporary stylists— might not only be time consuming, but also lack consistency. Could we
+            automate the process? Professor Kumar already had a database of ~2000 key words commonly used to describe clothing, such as the color, silhouette and material. We figured that the best solution would be to initially map these keywords—or
+            physical attributes of clothing —to more organic explanations by hand. For example, the key word ‘high-waisted’ could be mapped to ‘high-waisted bottoms are great at elongating your figure’. We could then use these phrases to construct a
+            complete explanation. While mapping 2000 words seems like a lot, it is ultimately much more productive than trying to come up with an explanation by hand for every unique scenario. If this product were implemented, we could consult
+            professional stylists for the mapping portion.
+            We also talked about the possibility of creating a browser plug in, which would generate these explanations as you browsed clothing sites and indicated interest in a certain product.
+            <br />
+            <br />
+            During Thursday’s tutorial, we learned the basics of Amazon Web Services, more commonly known as AWS. As someone who’s very new to cloud computing, it was a bit hard to follow along at first, but fascinating nonetheless. We learned 5
+            basic skills: creating instances, stopping and deleting instances, using ssh into an AWS from our local machines, the scp command for transferring large files between local machines and an AWS instances, as well s the screen command for
+            running processes in the background on an AWS instance. I also got to meet some new lab members who are PhD students!
+            <br />
+            <br />
+            Besides the meetings, I spent a lot of time this week setting up my DREU website, as well as working on my first web crawler in Python. I decided to crawl Uniqlo’s site. It’s been a little stressful, as I didn’t have any exposure to
+            programming in Python before Sunday. I went through an online Python bootcamp to learn the basics, then went to work on my crawler. I do wish I had more of a foundation/experience in Python before beginning my crawler, but I can make that
+            one of my goals this summer. As for the DREU site, it was great to familiarize myself with the Bootstrap library. I also really enjoyed making it look visually appealing—I’ll probably continue to update the site’s design throughout the
+            summer!
+            <br />
+            <br />
+            The weather in Champaign-Urbana has been a little cooler lately, but I’m actually enjoying it a lot. There’s nothing better than grabbing frozen yogurt after work and enjoying it on the Main Quad! I got to grab coffee with Liza on
+            Thursday and work on our DREU websites together, which was quite nice :).
           </p>
         </div><!-- /.blog-post -->
 
@@ -41,17 +98,24 @@
           <h2 class="blog-post-title blog-heading">week 1</h2>
           <p class="blog-post-meta blog-date">06.03.19 - 06.08.19</p>
           <hr>
-          <p>This week was a lot of fun! On day one, I got to meet up with Professor Kumar, as well as my other lab members, Yichen and Liza. We were able to grab lunch and discuss what projects were were most interested in during one-on-one
-            sessions. I decided to work on Prof. Kumar’s ongoing fashion project with Yichen, where we are is aiming to design the future of personal fashion via machine learning.
+          <p>This week was a lot of fun! On day one, I got to meet up with Professor Kumar, as well as my other lab members, Yichen and Liza. We were able to grab lunch at Sakanaya and discuss what projects were were most interested in during
+            one-on-one sessions. I decided to work on Prof. Kumar’s ongoing fashion project with Yichen, where we are aiming to design the future of personal fashion via machine learning.
             <br />
             <br />
-            A lot of our initial work consisted of reading papers, as well as learning how various programs such as mail chimp and type form worked. Most importantly however, we determined what factors consumers care about when selecting clothing,
-            such as color, price, versatility and appropriateness for a certain event. I created a mock HCI storyboard, and came up with various scenarios of user queries and accompanying product recommendations. We plan to conduct a user study to
-            determine which of these factors are most important to users. The results will ultimately allow us to make the best recommendations to users, and map the observable attributes of a product (such as material, price and color) to the more
-            organic factors like the fit for an ’occasion’, the user’s ‘body type’, or ’skin tone.’
+            During the first week, we read several papers: one of Professor Kumar’s own publications, as well as a paper on generating justifications for users in self driving cars. We also familiarized ourselves with online programs such as
+            MailChimp and Typeform, which will be useful when conducting studies later on. Most importantly, we discussed what factors consumers care about when selecting clothing—such as color, price, versatility and appropriateness for a certain
+            event. I created a mock HCI storyboard, and came up with various scenarios of user queries and accompanying product recommendations. We plan to conduct a user study to determine which of these factors are most important to users. The
+            results will ultimately allow us to make the best recommendations to users, and map the observable attributes of a product (such as material, price and color) to the more organic factors like the fit for an ’occasion’, the user’s ‘body
+            type’, or ’skin tone.’ To be authorized to conduct the surveys, we worked on completing the CITI Research Ethics and Compliance Training course.
             <br />
             <br />
-            In addition, we had our first tutorial on Saturday, in which we were introduced to web crawlers. I will be programming my own crawler in Python for a specific clothing site that will return product details such as name, price and more.
+            We also had our first technical tutorial on Saturday, where graduate student Yuan introduced us to web crawlers and walked us through a bit of his code. I’ve never had exposure to a) Python or b) data scrapping, but it should be super
+            interesting! Our job is to program our own crawlers for a specific clothing site. We briefly discussed what sites might be better than others for web crawling, and despite there being a general template, we will have to deal with edge
+            cases for every unique site. The web crawler consists of functions that can return information about a product, a list of all products, prices, URLs and more.
+            <br />
+            <br />
+            The first program luncheon was also held on Wednesday. A lot of people from the REU program turned up, and we had empanadas while learning about what research is like, how it differs from industry, and how to get started!
+
           </p>
         </div><!-- /.blog-post -->
 
@@ -64,12 +128,12 @@
 
       </div><!-- /.blog-main -->
 
-      <aside class="col-md-4 col-sm-12 blog-sidebar">
+      <aside class="col-md-4 blog-sidebar">
         <div class="mb-3 about-section rounded">
-          <h4 class="about-heading">About Me</h4>
+          <h4 class="about-heading">About</h4>
           <img class="profilepic" src="images/profile" alt="profile">
-          <p class="mb-0 about-body">I'm Lindsay, a rising sophomore @ USC studying computer science and media arts + practice. In summer 2019 I participated in the <a class="link" href="https://cra.org/cra-w/dreu/#overview">DREU research program</a>
-            at the University of Illinois with <a href="http://ranjithakumar.net/" class="link">Ranjitha Kumar.</a> </p>
+          <p class="mb-0 about-body">I'm Lindsay, a rising sophomore @ USC studying computer science. I participated in the 2019 <a class="link" href="https://cra.org/cra-w/dreu/#overview">DREU research program</a>
+            at the University of Illinois with <a href="http://ranjithakumar.net/" class="link">Ranjitha Kumar. </a> This site is dedicated to documenting my DREU experience!</p>
         </div>
 
         <div class="mb-3 about-section rounded">
@@ -86,15 +150,15 @@
 
 
     </div>
-    </div>
-    <!-- end of row -->
-    <div class = "footer">
-      <i class="footer-icon fab fa-twitter"></i>
-      <i class="footer-icon fab fa-facebook"></i>
-      <i class="footer-icon fab fa-instagram"></i>
-      <i class="footer-icon fas fa-envelope"></i>
-      <p class="copyright">© Copyright 2019 Lindsay Huang</p>
-      </div>
+  </div>
+  <!-- end of row -->
+  <div class="footer">
+    <!-- <i class="footer-icon fab fa-twitter"></i>
+    <i class="footer-icon fab fa-facebook"></i>
+    <i class="footer-icon fab fa-instagram"></i>
+    <i class="footer-icon fas fa-envelope"></i> -->
+    <p class="copyright">© Copyright 2019 Lindsay Huang</p>
+  </div>
 
 </body>
 
