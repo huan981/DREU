@@ -55,9 +55,30 @@
     <div class="row">
       <div class="col-md-8 blog-main rounded">
 
+        <div class="blog-post rounded">
+          <h2 class="blog-post-title blog-heading">week 8</h2>
+          <p class="blog-post-meta blog-date">07.22.19 - 07.26.19</p>
+          <hr />
+          <p>
+            This week, I returned to working on front-end development. We decided to implement a couple of new features, including toggles for adjusting what results our engine returns and how we rank them. For search, we have two options (keyword-only and smart search), as well as ranking (z-score and elastic). While implementing these toggles, I ran into a host of problems—the main one being that when I adjusted one toggle to ‘true’, it would automatically reset the other toggle to its default value, rather than saving the state. After looking at my code, I realized that the big issue was that I was adjusting state locally throughout my code—aka in each individual component. As I added more and more features (and thus states), they became difficult to manage, and some components were not remembering the state changes in other components. While I pinpointed the area in which the bug was happening, I couldn’t figure out exactly what it was. After reading a great article on lifting state, I decided to completely refactor my code so that I was only changing state in the App component (with functions like handleSearchToggle, handleRankToggle, etc). Thus, the App component could act as the single source of truth. Although it took a bit of time, it made everything else a lot easier, such as implementing the functionality of the filter/style buttons on each product card. Towards the end of the week, I worked on implementing infinite scroll while Michael worked on autocomplete for the search bars.
+            <br />
+            <br />
+            This week’s (last!) REU lunch was about what roles graduate students/ individuals with PhDs might hold in the industry. It was pretty fascinating, and many of the presenters talked about working at companies such as Google and Microsoft, but in a research role. 
+          </p>
+        </div><!-- /.blog-post -->
 
         <div class="blog-post rounded">
-          <h2 class="blog-post-title blog-heading">week 5</h2>
+          <h2 class="blog-post-title blog-heading">week 7</h2>
+          <p class="blog-post-meta blog-date">07.15.19 - 07.19.19</p>
+          <hr />
+          <p>
+            Over the weekend, we had two team meetings during which we reviewed code and discussed the progress on each of our parts. The front end development is complete for the time being, and we decided to shift our focus to the actual fashion recommendation model itself and improving it. One idea that we would like to implement (eventually) is presenting the justifications on the product image—with arrows pointing to each corresponding feature—rather than simply having them listed below. Doing so would help create a stronger visual connection between the justification and product recommendation. It is a bit complicated however, so we decided to save this particular feature for a later iteration. In the meantime though, Alice (my fellow lab member) and I have started doing research on the ResNet and ResNext architectures specifically designed for image classification. Our grad student mentor, Yuan, suggested a couple of online courses that would be helpful. I spent the rest of the week working through the courses and quickly realized that I didn’t have enough background in machine learning to fully understand everything in the course. Thus, I decided to pause the course for a bit and instead Google the basics, such as “what are neural networks?”, “what is convolution?”, and “how does backpropagation work?”. I created a document full of notes about these topics, and familiarized myself with Keras. Alice also recommended a Caltech ML course, which really helped bolster my understanding of the math behind backpropagation. While I missed this week’s REU lunch due to a sickness, we did go to the REU-organized escape room outing on Friday! Alice, Yichen and I teamed up with a couple of other girls from Dr. Amato’s lab and tried to conquer the “Wizard’s Curse” room. In the end, we managed to escape, only leaving 40 seconds left on the clock. It was a fantastic little break from work, and we’d love to escape from the “Artificial Intelligence” room with the rest of our lab another day!
+          </p>
+        </div><!-- /.blog-post -->
+
+
+        <div class="blog-post rounded">
+          <h2 class="blog-post-title blog-heading">week 6</h2>
           <p class="blog-post-meta blog-date">07.08.19 - 07.12.19</p>
           <hr />
           <p>This week, I’ve been in the thick of working on the front-end development in React. I decided to actually switch to using Semantic UI rather than Material, since it is more customizable and has simpler syntax. The coolest part of this
@@ -211,6 +232,9 @@
 
           <img class="owl-image" src="images/athenaowl.png" alt="owl">
           <p class="mb-0 about-body">While you're here, check out <a href="https://www.athenahacks.com/" class="link">AthenaHacks</a>, an all-female hackathon that I help organize every year!</p>
+
+
+
 
         </div>
 
