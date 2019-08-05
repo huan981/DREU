@@ -54,6 +54,18 @@
 
     <div class="row">
       <div class="col-md-8 blog-main rounded">
+        
+           <div class="blog-post rounded">
+          <h2 class="blog-post-title blog-heading">week 9</h2>
+          <p class="blog-post-meta blog-date">07.29.19 - 08.02.19</p>
+          <hr />
+          <p>
+            The front-end is nearing completion! This week was mainly dedicated to fixing a couple of (annoying) bugs and fine tuning other features. One issue was that infinite scroll would seemingly work only 90% of the time. Because the error didn’t occur every single time, it took me a while to figure out what was wrong. I finally realized that after a user would scroll to the bottom of a page (completing infinite scroll), one of the states would basically say, ‘infinite scroll is finished, no more items to display.’ When loading the results for a subsequent query, I forgot to reset this state. Thus, infinite scroll wouldn’t get triggered unless the page was refreshed. Another issue was with the dropdown/toggle that could change the search mode. If a user clicked on the toggle, then tried to click off of it (perhaps they changed their mind), the onChange function would still fire, reloading the page. I later fixed it so that clicking off the toggle would not fire any action, making it much more user friendly.
+            <br />
+            <br />
+            Alice headed home on Saturday, and we all got together for brunch at Destihl beforehand. It was very bittersweet :’)
+          </p>
+        </div><!-- /.blog-post -->
 
         <div class="blog-post rounded">
           <h2 class="blog-post-title blog-heading">week 8</h2>
