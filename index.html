@@ -42,6 +42,9 @@
           <li class="nav-item">
             <a class="nav-link" href="people.html">people</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="finalreport.html">final report</a>
+          </li>
         </ul>
 
       </div>
@@ -54,8 +57,17 @@
 
     <div class="row">
       <div class="col-md-8 blog-main rounded">
-        
-           <div class="blog-post rounded">
+
+        <div class="blog-post rounded">
+          <h2 class="blog-post-title blog-heading">week 10 🎉</h2>
+          <p class="blog-post-meta blog-date">08.05.19 - 08.09.19</p>
+          <hr />
+          <p>
+            This week was dedicated to fixing a few more bugs and wrapping up the whole research experience. We were able to have several team meetings to discuss the current state of the project. We are still improving the results returned, and I am still adding a few more small features/tweaks to the front-end. While we didn’t get to conduct the user study yet, the engine should be ready to go next week, which is really wonderful. In addition, we talked about the future of the project, and how implementing the search engine successfully allows to to explore a lot of great questions/ conduct multiple studies in the future. I’m extremely excited to continue working on this project during the school year!
+          </p>
+        </div><!-- /.blog-post -->
+
+        <div class="blog-post rounded">
           <h2 class="blog-post-title blog-heading">week 9</h2>
           <p class="blog-post-meta blog-date">07.29.19 - 08.02.19</p>
           <hr />
@@ -75,7 +87,7 @@
             This week, I returned to working on front-end development. We decided to implement a couple of new features, including toggles for adjusting what results our engine returns and how we rank them. For search, we have two options (keyword-only and smart search), as well as ranking (z-score and elastic). While implementing these toggles, I ran into a host of problems—the main one being that when I adjusted one toggle to ‘true’, it would automatically reset the other toggle to its default value, rather than saving the state. After looking at my code, I realized that the big issue was that I was adjusting state locally throughout my code—aka in each individual component. As I added more and more features (and thus states), they became difficult to manage, and some components were not remembering the state changes in other components. While I pinpointed the area in which the bug was happening, I couldn’t figure out exactly what it was. After reading a great article on lifting state, I decided to completely refactor my code so that I was only changing state in the App component (with functions like handleSearchToggle, handleRankToggle, etc). Thus, the App component could act as the single source of truth. Although it took a bit of time, it made everything else a lot easier, such as implementing the functionality of the filter/style buttons on each product card. Towards the end of the week, I worked on implementing infinite scroll while Michael worked on autocomplete for the search bars.
             <br />
             <br />
-            This week’s (last!) REU lunch was about what roles graduate students/ individuals with PhDs might hold in the industry. It was pretty fascinating, and many of the presenters talked about working at companies such as Google and Microsoft, but in a research role. 
+            This week’s (last!) REU lunch was about what roles graduate students/ individuals with PhDs might hold in the industry. It was pretty fascinating, and many of the presenters talked about working at companies such as Google and Microsoft, but in a research role.
           </p>
         </div><!-- /.blog-post -->
 
@@ -147,11 +159,11 @@
           <hr>
           <p>
             This week, I finished up and submitted my Python web crawler. Towards the end, I was stuck on two main problems a) dealing with infinite scroll and b) how to retrieve different color swatches (by clicking on buttons) when the URL didn’t
-            change. Luckily, grad students Yuan and Yuliang were able to work with me to figure out the issues. While there are still a few bugs (too many edge cases! the crawler is basically complete—the main goal is to get most (not necessarily
+            change. Luckily, my grad student mentors were able to help me to figure out the issues. While there are still a few bugs (too many edge cases!) the crawler is basically complete—the main goal is to get most (not necessarily
             all) products from each site.
             <br />
             <br />
-            Next up, I started learning React. It’s honestly pretty difficult, since I don’t have a lot of background in web development and Javascript. I’ve been following online tutorials as well as reading the documentation for React and ES6.
+            Next up, I started learning React. It’s honestly a bit challenging, since I don’t have a lot of background in web development and Javascript. I’ve been following online tutorials as well as reading the documentation for React and ES6.
             Hopefully more practice will help!
             <br />
             <br />
@@ -164,10 +176,9 @@
           <h2 class="blog-post-title blog-heading">week 2</h2>
           <p class="blog-post-meta blog-date">06.10.19 - 06.14.19</p>
           <hr>
-          <p>Happy Friday!
-            Things have started settling down this week, as the final interns have joined and begun the on boarding process. Professor Kumar and I have decided on two weekly meetings: one on Monday afternoon, and the second on Thursday evenings. The
-            Monday meetings are dedicated to discussing the actual fashion research project, reviewing the work we did over the week, and setting new goals. The Thursday meetings are lab-wide. The first half is dedicated to updates, where each group
-            talks a bit about what they’ve been working on. During the second half, Yuan, a graduate student, holds a mini tutorial for us in which he teaches us a new skill!
+          <p>
+            Professor Kumar and I have decided on two weekly meetings: one on Monday afternoon, and the second on Thursday evenings. The
+            Monday meetings are dedicated to discussing the actual fashion research project, reviewing the work we did over the week, and setting new goals. The Thursday meetings are for lab-wide updates.
             <br />
             <br />
             This Monday’s meeting was particularly productive. We reviewed the mock survey Yichen and I had designed. In the mock survey, we planned to ask about things such as the user’s clothing preferences (brand preferences, price range, colors),
@@ -176,24 +187,19 @@
             After discussing our survey, Professor Kumar and I honed in on one aspect. Having Yichen and I generate the explanations by hand—acting as the temporary stylists— might not only be time consuming, but also lack consistency. Could we
             automate the process? Professor Kumar already had a database of ~2000 key words commonly used to describe clothing, such as the color, silhouette and material. We figured that the best solution would be to initially map these keywords—or
             physical attributes of clothing —to more organic explanations by hand. For example, the key word ‘high-waisted’ could be mapped to ‘high-waisted bottoms are great at elongating your figure’. We could then use these phrases to construct a
-            complete explanation. While mapping 2000 words seems like a lot, it is ultimately much more productive than trying to come up with an explanation by hand for every unique scenario. If this product were implemented, we could consult
-            professional stylists for the mapping portion.
+            complete explanation. While mapping 2000 words seems like a lot, it is ultimately much more productive than trying to come up with an explanation by hand for every unique scenario.
             We also talked about the possibility of creating a browser plug in, which would generate these explanations as you browsed clothing sites and indicated interest in a certain product.
             <br />
             <br />
-            During Thursday’s tutorial, we learned the basics of Amazon Web Services, more commonly known as AWS. As someone who’s very new to cloud computing, it was a bit hard to follow along at first, but fascinating nonetheless. We learned 5
+            During Thursday’s tutorial, we learned the basics of Amazon Web Services, more commonly known as AWS. We learned 5
             basic skills: creating instances, stopping and deleting instances, using ssh into an AWS from our local machines, the scp command for transferring large files between local machines and an AWS instances, as well s the screen command for
-            running processes in the background on an AWS instance. I also got to meet some new lab members who are PhD students!
+            running processes in the background on an AWS instance.
             <br />
             <br />
-            Besides the meetings, I spent a lot of time this week setting up my DREU website, as well as working on my first web crawler in Python. I decided to crawl Uniqlo’s site. It’s been a little stressful, as I didn’t have any exposure to
-            programming in Python before Sunday. I went through an online Python bootcamp to learn the basics, then went to work on my crawler. I do wish I had more of a foundation/experience in Python before beginning my crawler, but I can make that
-            one of my goals this summer. As for the DREU site, it was great to familiarize myself with the Bootstrap library. I also really enjoyed making it look visually appealing—I’ll probably continue to update the site’s design throughout the
+            Besides the meetings, I spent time this week setting up my DREU website, as well as working on my first web crawler in Python. I decided to crawl Uniqlo’s site. It’s been a little stressful, as I didn’t have any exposure to
+            programming in Python before Sunday.  I do wish I had more of a foundation/experience in Python before beginning my crawler, but I can make that
+            one of my goals this summer. As for the DREU site, it was great to familiarize myself with the Bootstrap library. I’ll probably continue to update the site’s design throughout the
             summer!
-            <br />
-            <br />
-            The weather in Champaign-Urbana has been a little cooler lately, but I’m actually enjoying it a lot. There’s nothing better than grabbing frozen yogurt after work and enjoying it on the Main Quad! I got to grab coffee with Liza on
-            Thursday and work on our DREU websites together, which was quite nice :).
           </p>
         </div><!-- /.blog-post -->
 
@@ -212,7 +218,7 @@
             type’, or ’skin tone.’ To be authorized to conduct the surveys, we worked on completing the CITI Research Ethics and Compliance Training course.
             <br />
             <br />
-            We also had our first technical tutorial on Saturday, where graduate student Yuan introduced us to web crawlers and walked us through a bit of his code. I’ve never had exposure to a) Python or b) data scrapping, but it should be super
+            We also had our first technical tutorial on Saturday, where graduate student Yuan introduced us to web crawlers and walked us through a bit of his code. I’ve never had exposure to data scrapping, but it should be super
             interesting! Our job is to program our own crawlers for a specific clothing site. We briefly discussed what sites might be better than others for web crawling, and despite there being a general template, we will have to deal with edge
             cases for every unique site. The web crawler consists of functions that can return information about a product, a list of all products, prices, URLs and more.
             <br />
